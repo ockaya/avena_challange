@@ -13,6 +13,8 @@
 		86104CDE24CD7DA500C07E3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86104CDC24CD7DA500C07E3E /* Main.storyboard */; };
 		86104CE024CD7DA700C07E3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86104CDF24CD7DA700C07E3E /* Assets.xcassets */; };
 		86104CE324CD7DA700C07E3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86104CE124CD7DA700C07E3E /* LaunchScreen.storyboard */; };
+		86104CEB24CD8EB700C07E3E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86104CEA24CD8EB700C07E3E /* Extensions.swift */; };
+		86104CED24CDCB9F00C07E3E /* GuessResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86104CEC24CDCB9F00C07E3E /* GuessResultTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		86104CDF24CD7DA700C07E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86104CE224CD7DA700C07E3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86104CE424CD7DA700C07E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86104CEA24CD8EB700C07E3E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		86104CEC24CDCB9F00C07E3E /* GuessResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessResultTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				86104CDF24CD7DA700C07E3E /* Assets.xcassets */,
 				86104CE124CD7DA700C07E3E /* LaunchScreen.storyboard */,
 				86104CE424CD7DA700C07E3E /* Info.plist */,
+				86104CEA24CD8EB700C07E3E /* Extensions.swift */,
+				86104CEC24CDCB9F00C07E3E /* GuessResultTableViewCell.swift */,
 			);
 			path = avena_challange;
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			files = (
 				86104CDB24CD7DA500C07E3E /* ViewController.swift in Sources */,
 				86104CD724CD7DA500C07E3E /* AppDelegate.swift in Sources */,
+				86104CED24CDCB9F00C07E3E /* GuessResultTableViewCell.swift in Sources */,
 				86104CD924CD7DA500C07E3E /* SceneDelegate.swift in Sources */,
+				86104CEB24CD8EB700C07E3E /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,17 +292,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CS55G77VSQ;
 				INFOPLIST_FILE = avena_challange/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ock.avena-challange";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,17 +313,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CS55G77VSQ;
 				INFOPLIST_FILE = avena_challange/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ock.avena-challange";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
